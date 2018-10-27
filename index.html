@@ -6,20 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SweetPotato Landing page</title>
- <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family='Lato'" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="main-container">
     <header>
-      <nav class="nav">
-        <p>SuperFood inc.</p>
-        <p>SweetPotato</p>
+      <nav class="nav d-flex justify-content-between d-flex align-items-center">
+        <li class="nav-item">SuperFood inc.</li>
+        <li class="nav-item">SweetPotato</li>
       </nav>
     </header>
 
   <!-- first section -->
-  <div class="first-container">
+  <div class="first-container jumbotron d-sm-block">
     <div class="bg-left-container"></div>
     <div class="bg-rigth-container">
       <div class="main-text">
@@ -37,11 +39,13 @@
   </div>
 
   <!-- second section -->
-  <div id="second-container" class="container">
-    <p class="title-3-section">Why sweeets poatos?</p>
-    <div>
+  <p class="title-3-section">Why sweet potatoes?</p>
+  <div>
+      <div id="second-container" class="container container-fluid d-flex justify-content-around"">
       <div class="card" >
-          <img class="card-img-top" src="./assets/images/potato.svg" alt="Card image cap">
+        <center>
+          <img class="card-img-top" src="./assets/images/1.png" alt="Card image cap">
+        </center>
           <div class="card-body">
             <h2>5-a-day!</h2>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint enim maxime voluptate
@@ -49,7 +53,9 @@
           </div>
         </div>
         <div class="card" >
-          <img class="card-img-top" src="./assets/images/potato.svg">
+          <center>
+            <img class="card-img-top" src="./assets/images/2.png">
+          </center>
           <div class="card-body">
             <h2>Sweet Savoury</h2>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint enim maxime voluptate
@@ -57,7 +63,9 @@
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top" src="./assets/images/potato.svg"/>
+          <center>
+            <img class="card-img-top" src="./assets/images/3.png"/>
+          </center>
           <div class="card-body">
             <h2>Easy & Cheap</h2>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint enim maxime voluptate
@@ -69,12 +77,13 @@
 
   <!-- third section -->
   <div id="third-container" class="row container-fluid">
+    <h2>What can I cook?</h2>
     <div class="row">
-      <div class="third-left-section ">
-          <p class="title-3-section"></p>
-          <img src="./assets/images/friedPotato.png" width="50px" alt="">
-        </div>
 
+      <div class="third-left-section ">
+        <p class="title-3-section"></p>
+        <img src="./assets/images/Screen Shot 2018-10-27 at 16.35.51.png" width="50px" alt="">
+      </div>
       <div class="v-separator"></div>
       <div class="third-rigth-section">
         <h2>Roasted Sweets potatos</h2>
@@ -89,7 +98,7 @@
         </ul>
       </div>
     </div>
-    <div>
+    <div class="row">
       <p>Join our cooking community</p>
       <p>Receive a sweet potatoe each week.</p>
       <div class="input-group">
